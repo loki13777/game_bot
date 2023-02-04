@@ -8,10 +8,10 @@ class DB:
         """инициализайция соединения с БД"""
         self.connection = psycopg2.connect(
             database=db_name,
-            user="postgres",
-            password="123qweasdzxC",
-            host="185.213.208.77",
-            port="5432",
+            user="",
+            password="",
+            host="",
+            port="",
         )
         self.connection.autocommit = True
         self.cursor = self.connection.cursor()
